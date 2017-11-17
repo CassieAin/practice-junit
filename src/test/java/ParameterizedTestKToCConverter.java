@@ -25,7 +25,11 @@ public class ParameterizedTestKToCConverter {
     @Parameterized.Parameters(name ="{index}: convert from {0} to {1} = {2}")
     public static Collection<Object[]> getTestData(){
         return Arrays.asList(new Object[][] {
-                {303.2, 30}
+                {303.2, 30},
+                {273.2, 0},
+                {285.2, 12},
+                {263.2, -10},
+                {243.2, -30}
         });
     }
 

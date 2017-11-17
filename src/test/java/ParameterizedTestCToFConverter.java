@@ -24,7 +24,11 @@ public class ParameterizedTestCToFConverter {
     @Parameterized.Parameters(name ="{index}: convert from {0} to {1} = {2}")
     public static Collection<Object[]> getTestData(){
         return Arrays.asList(new Object[][] {
-                {30, 86}
+                {30, 86},
+                {0, 32},
+                {12, 53.59},
+                {-10, 14},
+                {-30, -22}
         });
     }
 
